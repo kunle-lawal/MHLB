@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
+*{
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.2s;
+    padding: 0;
+}
+a{
+    color:inherit;
+}
+html, body {
+    font-family: 'Quicksand', sans-serif;
+    width:  100%;
+    height: 100%;
+    margin: 0px; 
+    background-color: #f3f3f3;
+    color:#444;
+    overflow-x: hidden; 
+    text-align: center;
+}
+
+p{
+    font-weight: 900;
+}
+
+#navigationBar{
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:0;
+    background-color:#f9f9f9;
+    width:200px;
+    height:100%;
+    z-index:3; 
+}
+/*classses to affect navigation bar*/
+.closeNavigationBar{
+    left:-200px;
+}
+.openNavigationBar{
+    left:0px;
+}
+/* End of classes to affect navigation bar*/
+#menuControlContainer{
+    position:absolute;
+    top:0;
+    left:0;
+    text-align:center;
+    height:100px;
+    width:100%;
+}
+
+#menuControl{
+    display: inline-block;
+    position:absolute;
+    margin-top:6px;
+    margin-left:100px;
+    padding:25px;
+    text-align:center;
+    cursor:pointer;
+    z-index: 2;
+}
+
+.menuControlBar{
+    background-color:#222;
+    width:50px;
+    height:2px;
+    margin:7px;
+}
+
+#menuControl:hover {
+   
+}
+
+#menuControl:hover > #middleControlBar{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#navigationItems{
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width: 100%;
+    height:500px;
+    text-align: center;
+}
+
+#navigationItems ul li{
+    margin-top:85px;
+    margin-top:85px;
+}
+
+
+
+#introContainer{
+    width:100%;
+    height:auto;
+    position:relative;
+}
+
+#intro{
+    position:relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    height:90%;
+    width:90%;
+    text-align: center;
+}
+
+#introHeader{
+    position:relative;
+    margin-top:150px;
+    display: inline-block;
+    height: 60%;
+    width:80%;
+    text-align: center;
+}
+
+#introHeader h1{
+    font-size:5vw;
+    margin-top:70px;
+}
+
+#locationIcon{
+    cursor:pointer;
+    display: inline-block;
+    text-align: center;
+    margin-top:100px;
+    width:100%;
+    height:100px;
+    transform: translateY(0px);
+}
+
+#locationIcon img{
+    display: inline-block;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+}
+
+
+
+
+#aboutContainer{
+    display: inline-block;
+    width:60vw;
+    margin-top:100px;
+    margin-bottom:100px;
+    background-color:#ffffff;
+    height:auto;
+    position:relative;
+}
+
+#about{
+    position:relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    height:90%;
+    width:90%;
+    text-align: center;
+}
+
+.aboutParagraph{
+    display: inline-block;
+    text-align: justify;
+    width:90%;
+    font-size:18px;
+}
+
+#ourMission{
+    position:relative;
+    margin-top:120px;
+    display: inline-block;
+    height: 60%;
+    width:90%;
+    text-align: center;
+}
+
+#outMission h1{
+    font-size:0.9vw;
+    margin-top:70px;
+}
+
+#ourMission p{
+    
+}
+
+#ourInformation{
+    position:relative;
+    display: inline-block;
+    height: 60%;
+    width:90%;
+    text-align: center;
+}
+
+#ourInformation h1{
+
+}
+
+#ourInformation p{
+    margin-bottom:120px;
+}
+
+
+
+
+
+#scheduleContainer{
+    width:100%;
+    height:auto;
+    position:relative;
+}
+
+#schedule{
+    position:relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    height:90%;
+    width:90%;
+    text-align: center;
+}
+
+#scheduleHeader{
+    position:relative;
+    margin-top:150px;
+    display: inline-block;
+    height: 60%;
+    width:80%;
+    text-align: center;
+}
+
+#scheduleHeader h1{
+    font-size:5vw;
+    margin-top:70px;
+}
+
+#scheduleInformation{
+    width:90%;
+    padding:10px;
+    position:relative;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align: center;
+    margin:auto;
+
+}
+
+.scheduleInformations{
+    width:80%;
+    height:200px;
+    display:inline-block;
+}
+
+.scheduleInformations h3{
+    float: left;
+    width:30%;
+}
+
+.scheduleInformations P{
+    float: right;
+    width:60%;
+    text-align: justify;
+}
+
+#scheduleInformationsDivider{
+    position: absolute;
+    left:0;
+    right:600px;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height:1000px;
+    width:0.1%;
+    border-left:2px solid rgb(128,200,80);
+    display: inline-block;
+}
+/*Keyframe Animations*/
+
+/*Animate the Locaiton Icon*/
+@keyframes bounce {
+    0% {transform:translateY(-0px)}
+    25% {transform:translateY(-18px)}
+    50% {transform:translateY(5px)}
+    75% {transform:translateY(-8px)}
+    85% {transform:translateY(-10px)}
+    100% {transform:translateY(-0px)}
+}
