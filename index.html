@@ -18,34 +18,37 @@
 			<div id="middleControlBar" class="menuControlBar"></div>
 			<div id="bottomControlBar" class="menuControlBar"></div>
 		</div>
-	</div>  
+	</div>
 
-	<div id="navigationItems">
+	<div id="navigationItems" class="nav">
 		<ul>
-			<li>Home</li>
-			<li>Mission</li>
-			<li>About Us</li>
-			<li>Contacts</li>
+			<li><a href="#home" class="navItem">Home</a></li>
+			<li><a href="#mission" class="navItem">Mission</a></li>
+			<li><a href="#schedule" class="navItem">Schedule</a></li>
+			<li><a href="#support" class="navItem">Support</a></li>
+			<li><a href="#contact" class="navItem">Contact</a></li>
 		</ul>
 	</div>
 </div>
 
 <div id="introContainer">
+	<a name="home" id="home"></a>
 	<div id="intro">
 		<div id="introHeader" class="header">
 			<h1>RIDE THE <span style="color:rgb(128,200,80);">MISSION HILL LINK</span> Shuttle BUS</h1>
 		</div>
 
 		<div id="locationIcon" class="bounce">
-			<h2>Where's My <span style="color: rgb(128,200,80);">Link</span> Bus</h2>
+			<h2>Where's My <span style="color: rgb(128,200,80);">Link</span> Bus?</h2>
 			<br>
 			<br>
-			<img src="pictures/icons/black_location_icon.png">
+			<a href="#schedule"><img src="pictures/icons/black_location_icon.png"></a>
 		</div>
 	</div>
 </div>
 
 <div id="aboutContainer">
+	<a name="mission" id="mission"></a>
 	<div id="about">
 		<div id="ourMission">
 			<h1>- Our Mission -</h1>
@@ -53,21 +56,26 @@
 			<p class="aboutParagraph">The LINK is a community bus run by     community volunteers – your  neighbors -- for anyone to ride.    </p>
 		</div>
 
+		<br>
+		<br>
+
 		<div id="ourInformation">
-			<h1>About</h1>
+			<h1>- About -</h1>
 
 			<p class="aboutParagraph">It circles the hill from Brigham Circle to Mission Main and Alice Taylor, to the Benjamin Nursing Home and Landmark Assisted Living on the Back of the Hill and New England Baptist Hospital on the top of the hill. 
-This very local service was established in the late 1970s to fill a need for     improved transportation options for residents. 
-The LINK is not a free service; it is an affordable way to get to the MBTA at Brigham Circle; to doctors’ appointments at the hospitals; to local banks, restaurants, Walgreen’s or Stop & Shop for groceries – and home from all of those locations.  
-<br>
-<br>
-The LINK exemplifies transit justice,      making it possible for many people to  continue to live in the neighborhood who might otherwise not be able to travel about, especially during bad weather, and without incurring the    expense of cab fare. </p>
+			This very local service was established in the late 1970s to fill a need for     improved transportation options for residents. 
+  			</p>
+  			<p class="aboutParagraph"><span style="color:blue; font-weight:900;">The LINK is not a free service;</span> it is an affordable way to get to the MBTA at Brigham Circle; to doctors’ appointments at the hospitals; to local banks, restaurants, Walgreen’s or Stop & Shop for groceries – and home from all of those locations.</p>
+			<p class="aboutParagraph"><span style="color:purple; font-weight:bold;">The LINK exemplifies transit justice,</span>      making it possible for many people to  continue to live in the neighborhood who might otherwise not be able to travel about, especially during bad weather, and without incurring the    expense of cab fare. </p>
+			<br>
+			<br>
 		</div>
 	</div>
 </div>
 
 
 <div id="scheduleContainer">
+	<a name="schedule" id="schedule"></a>
 	<div id="schedule">
 		<div id="scheduleHeader">
 			<h1>Schedule</h1>
@@ -97,6 +105,58 @@ The LINK exemplifies transit justice,      making it possible for many people to
 						<p>$0.00: 12 and under</p>
 				</p>
 			</div>
+
+			<div class="scheduleInformations">
+				<h3>Map</h3>
+				<div id="" class="mapContainer">
+					<div id="map">
+						<img src="pictures/map/busroute.PNG" alt="">
+						<ul id="mapInfo" class="hidden">
+							<li>Please note: Weather and other traffic-related issues may cause route variations. </li>
+							<li>While the LINK has a scheduled departure from Brigham Circle by Stop & Shop every halfhour, driving conditions or the needs of riders may also cause that to vary somewhat. Please be patient!</li>
+							<li>For delays longer than 15 minutes, please call TransAction at 781-895-1100</li>
+							<li>The LINK relies on ridership to convince its supporters to maintain support; word of mouth is our best marketing tool — RIDE THE LINK AND BRING YOUR NEIGHBORS.  </li>
+						</ul>
+					</div>
+						
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="supportContainer">
+	<a name="support" id="support"></a>
+	<div id="supportTitle">
+		<h1>Our Support</h1>
+	</div>
+
+	<div id="ourSupport">
+		<div id="ourSupportContainer">
+			<div id="ourSupport">
+				<div class="supportImage" ><img src="http://www.thelennyzakimfund.org/home/sites/default/files/SlaterFoundationLogo.png" alt=""></div>
+				<div class="supportImage"><img src="https://www.harvard.edu/sites/default/files/user13/harvard_shield_wreath.png" alt=""></div>
+				<div class="supportImage"><img src="http://communications.tufts.edu/wp-content/uploads/tufts-logo-univ-blue.png" alt=""></div>
+				<div class="supportImage" style="background-color:#222;"><img src="http://www.missionhillfenwaynt.org/logowhite3.png" alt=""></div>
+				<div class="supportImage"><img src="https://upload.wikimedia.org/wikipedia/en/e/e9/New_England_Baptist_Hospital.png" alt=""></div>
+				<div class="supportImage"><img src="https://pbs.twimg.com/profile_images/1570295109/Hill-CDC-STACK.gif" alt=""></div>
+				<div class="supportImage"><img src="http://www.oncampus.global/ugc-1/1/19/0/WIT_shield_and_type-01_color.png" alt=""></div>
+				<div class="supportImage"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/1024px-MBTA.svg.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="contactContainer">
+	<a name="contact" id="contact"></a>
+	<div id="contact">
+		<h1>Contact</h1>
+
+		<div id="contactInfo">
+			<p>Managed by: A volunteer committee  of community residents</p>
+			<p>Operated by:  TransAction Corporate Shuttles</p>
+			<p>781-895-1100</p>
 		</div>
 	</div>
 </div>
