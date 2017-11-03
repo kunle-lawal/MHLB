@@ -7,11 +7,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 </head>
 <body>
 
-<div id="navigationBar" class="closeNavigationBar">
+<div id="navigationBar" class="openNavigationBar">
 	<div id="menuControlContainer">
 		<div id="menuControl">
 			<div id="topControlBar" class="menuControlBar"></div>
@@ -19,20 +21,20 @@
 			<div id="bottomControlBar" class="menuControlBar"></div>
 		</div>
 	</div>
-
-	<div id="navigationItems" class="nav">
-		<ul>
-			<li><a href="#home" class="navItem">Home</a></li>
-			<li><a href="#mission" class="navItem">Mission</a></li>
-			<li><a href="#schedule" class="navItem">Schedule</a></li>
-			<li><a href="#support" class="navItem">Support</a></li>
-			<li><a href="#contact" class="navItem">Contact</a></li>
-		</ul>
+	
+	<div class="navigationItems">
+		<a id="nav1" href="#home" class="navItem">Home</a>
+		<a id="nav2" href="#mission" class="navItem">Mission</a>
+		<a id="nav3" href="#schedule" class="navItem">Schedule</a>
+		<a id="nav4" href="#support" class="navItem">Support</a>
+		<a id="nav5" href="#contact" class="navItem">Contact</a>
 	</div>
 </div>
 
+
+
+<a name="home" id=""></a>
 <div id="introContainer">
-	<a name="home" id="home"></a>
 	<div id="intro">
 		<div id="introHeader" class="header">
 			<h1>RIDE THE <span style="color:rgb(128,200,80);">MISSION HILL LINK</span> Shuttle BUS</h1>
@@ -47,8 +49,9 @@
 	</div>
 </div>
 
+
+<a name="mission" id=""></a>
 <div id="aboutContainer">
-	<a name="mission" id="mission"></a>
 	<div id="about">
 		<div id="ourMission">
 			<h1>- Our Mission -</h1>
@@ -74,8 +77,8 @@
 </div>
 
 
+<a name="schedule" id=""></a>
 <div id="scheduleContainer">
-	<a name="schedule" id="schedule"></a>
 	<div id="schedule">
 		<div id="scheduleHeader">
 			<h1>Schedule</h1>
@@ -85,8 +88,11 @@
 			<div id="scheduleInformationsDivider"></div>
 			<div class="scheduleInformations">
 				<h3>When</h3>
-				<p>Mon-Fri from 10am - 2pm and 3pm - 6:30pm</p>
-				<p>Saturdays 10am - 2pm</p>
+				<p>Mon-Fri from: </p>
+				<p style="margin-bottom:20px;">10:30am - 6:30pm</p>
+
+				<p>First and Third Saturdays of each month from: </p>
+				<p>10am - 2pm</p>
 			</div>
 
 			<div class="scheduleInformations">
@@ -100,9 +106,9 @@
 				<h3>Fares</h3>
 				<p>
 					
-						<p>$1.50: adults</p>
-						<p>$.50: seniors & people with disabilities</p>
-						<p>$0.00: 12 and under</p>
+						<p style="margin-bottom:20px;">$1.50: adults</p>
+						<p style="margin-bottom:20px;">$.50: seniors and people with disabilities</p>
+						<p>Free: 12 and under</p>
 				</p>
 			</div>
 
@@ -110,7 +116,7 @@
 				<h3>Map</h3>
 				<div id="" class="mapContainer">
 					<div id="map">
-						<img src="pictures/icons/busroute.PNG" alt="">
+						<img src="pictures/map/busroute.PNG" alt="">
 						<ul id="mapInfo" class="hidden">
 							<li>Please note: Weather and other traffic-related issues may cause route variations. </li>
 							<li>While the LINK has a scheduled departure from Brigham Circle by Stop & Shop every halfhour, driving conditions or the needs of riders may also cause that to vary somewhat. Please be patient!</li>
@@ -126,30 +132,53 @@
 </div>
 
 
+<a name="support" id=""></a>
 <div id="supportContainer">
-	<a name="support" id="support"></a>
 	<div id="supportTitle">
-		<h1>Our Support</h1>
+		<h1>Our Supporters</h1>
 	</div>
 
 	<div id="ourSupport">
 		<div id="ourSupportContainer">
 			<div id="ourSupport">
-				<div class="supportImage" ><img src="http://www.thelennyzakimfund.org/home/sites/default/files/SlaterFoundationLogo.png" alt=""></div>
-				<div class="supportImage"><img src="https://www.harvard.edu/sites/default/files/user13/harvard_shield_wreath.png" alt=""></div>
-				<div class="supportImage"><img src="http://communications.tufts.edu/wp-content/uploads/tufts-logo-univ-blue.png" alt=""></div>
-				<div class="supportImage" style="background-color:#222;"><img src="http://www.missionhillfenwaynt.org/logowhite3.png" alt=""></div>
-				<div class="supportImage"><img src="https://upload.wikimedia.org/wikipedia/en/e/e9/New_England_Baptist_Hospital.png" alt=""></div>
-				<div class="supportImage"><img src="https://pbs.twimg.com/profile_images/1570295109/Hill-CDC-STACK.gif" alt=""></div>
-				<div class="supportImage"><img src="http://www.oncampus.global/ugc-1/1/19/0/WIT_shield_and_type-01_color.png" alt=""></div>
-				<div class="supportImage"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/1024px-MBTA.svg.png" alt=""></div>
+				<div id="mainSupport">
+					<a href="https://www.mbta.com/"> <div class="supportImage"><img src="http://2.bp.blogspot.com/-vdwn5JSh3ks/UfciK-b9i4I/AAAAAAAAAUQ/dlADRCkYRfI/s1600/massachusetts-bay-transportation-authority-logo.png" alt=""></div> </a>
+
+					<a href="https://www.nebh.org/"><div class="supportImage"><img src="https://upload.wikimedia.org/wikipedia/en/e/e9/New_England_Baptist_Hospital.png" alt=""></div> </a> 
+
+					<div class="supportImage">
+						<p style="height:auto; font-size:30px; margin-top:23px; width:80%; display: inline-block; font-family: 'Poiret One', cursive;">BACK OF THE HILL CDC</p>
+					</div>
+				</div>
+
+				<br>
+				<br>
+
+				<h1 style="font-size:70px; margin-top:90px;">Additional Support From</h1>
+
+				<br>
+				<br>
+				<div id="additionalSupport">
+					<a href="https://wit.edu/"> <div class="supportImage"><img src="http://www.oncampus.global/ugc-1/1/19/0/WIT_shield_and_type-01_color.png" alt=""></div> </a> 
+
+					<a href="http://www.missionhillfenwaynt.org/"><div class="supportImage" style="background-color:#222;"><img src="http://www.missionhillfenwaynt.org/logowhite3.png" alt=""></div></a>
+
+					<a href="https://www.facebook.com/TheSlaterFoundation/"><div class="supportImage" ><img src="http://www.thelennyzakimfund.org/home/sites/default/files/SlaterFoundationLogo.png" alt=""></div></a>
+				
+					<a href="https://www.harvard.edu/"><div class="supportImage"><img src="http://1000logos.net/wp-content/uploads/2017/02/Harvard-college-emblems.jpg" alt="Harvard"></div></a>
+				
+					<a href="https://www.tufts.edu/"><div class="supportImage"><img src="http://communications.tufts.edu/wp-content/uploads/tufts-logo-univ-blue.png" alt=""></div></a>
+				
+					<a href="http://savageproperties.net/"><div class="supportImage"><img src="http://savageproperties.net/wp-content/uploads/sites/3604/2015/11/savage-logo.jpg" alt=""></div></a>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
+
+<a name="contact" id=""></a>
 <div id="contactContainer">
-	<a name="contact" id="contact"></a>
 	<div id="contact">
 		<h1>Contact Details</h1>
 
@@ -166,12 +195,15 @@
 
 <div id="final_footer" class="">
 	<div id="final_footer_p">
-		<p>Mission Hill Youth Collaborative</p>
+		<p>Mission Hill Link Bus</p>
 		<p>Copyright&copy;2017</p> 
 		<p>Developed by <a href="http://www.kunlelawal.xyz/" style="color:rgba(150, 70, 70, 1);">Olakunle Lawal</a></p>
 	</div>
 </div>
 
+
+<script type="text/javascript" src="JSaddons/jquery.localScroll.js"></script>
+<script type="text/javascript" src="JSaddons/jquery.scrollTo.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html> 
