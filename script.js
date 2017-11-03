@@ -9,7 +9,10 @@ $(document).ready(function(){
 		$("#mapInfo").toggleClass("hidden");
 	}); 
 
-	//$('#navigationItems').localScroll({duration:800});
+	//$(".navItem").click(function(){
+		//$('.navigationItems').localScroll({duration:800});
+		//alert("Hi");
+	//})
 
 
 	$('a').click(function(){
